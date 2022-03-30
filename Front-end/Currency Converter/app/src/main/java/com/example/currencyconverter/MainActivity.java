@@ -2,7 +2,9 @@ package com.example.currencyconverter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -19,5 +21,10 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide(); // this hides the action bar
 
         setContentView(R.layout.activity_main);
+    }
+
+    public void getToCalculator (View view){
+        Intent obj = new Intent(getApplicationContext(), MainActivity2.class);
+        startActivity(obj);
     }
 }
