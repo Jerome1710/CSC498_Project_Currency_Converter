@@ -105,6 +105,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.714" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="147dp"
+        android:layout_height="57dp"
+        android:backgroundTint="@color/white"
+        android:onClick="goToMain"
+        android:text="Main Page"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        app:cornerRadius="20.37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
+
 
 
 
