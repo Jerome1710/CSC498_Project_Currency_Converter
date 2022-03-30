@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void getToCalculator (View view){
+    public void goToCalculator (View view){
         Intent obj = new Intent(getApplicationContext(), MainActivity2.class);
         startActivity(obj);
     }

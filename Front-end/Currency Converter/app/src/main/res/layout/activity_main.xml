@@ -36,7 +36,7 @@
         android:layout_width="147dp"
         android:layout_height="57dp"
         android:backgroundTint="@color/white"
-        android:onClick="getToCalculator"
+        android:onClick="goToCalculator"
         android:text="Calculator"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/black"
