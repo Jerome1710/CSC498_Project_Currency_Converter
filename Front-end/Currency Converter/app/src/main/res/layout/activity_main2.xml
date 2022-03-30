@@ -73,6 +73,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.088" />
 
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="260dp"
+        android:layout_height="42dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#7A7878"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="188dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/white"
+        android:text="Convert To USD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#C9000000"
+        android:textStyle="bold|italic"
+        app:cornerRadius="18.34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
 
 
 
