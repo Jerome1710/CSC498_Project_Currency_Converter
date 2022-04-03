@@ -70,4 +70,12 @@ public class MainActivity2 extends AppCompatActivity {
         Intent obj = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(obj);
     }
+
+    public void fadeAmountToConvert(View view) {
+        // to make the text disappear while entering values
+        if(amount_to_convert.getText().toString().equals("The amount LBP or USD")){
+            amount_to_convert.setText("");
+        }
+    }
+
 }
