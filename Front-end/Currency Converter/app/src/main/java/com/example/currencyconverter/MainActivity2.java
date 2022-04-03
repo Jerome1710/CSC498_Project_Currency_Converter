@@ -78,4 +78,13 @@ public class MainActivity2 extends AppCompatActivity {
         }
     }
 
+    public void convertToLbp (View view){
+
+        String usd = amount.getText().toString();
+        String lbp = "0";
+
+        DownloadTask task = new DownloadTask();
+        task.execute(usd, lbp);
+    }
+
 }
