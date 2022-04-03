@@ -34,21 +34,17 @@ public class MainActivity extends AppCompatActivity {
         buy = findViewById(R.id.textView);
         sell = findViewById(R.id.textView3);
 
-        String url = "http://192.168.0.101/Currency_Converter/get.php";
+        String url = "http://192.168.0.101/Currency_Converter/get.php"; // url of the API (get_updated_rate)
 
         DownloadTask task = new DownloadTask();
-        task.execute(url);
-
-    }
-
-    public void goToCalculator (View view){
-        Intent obj = new Intent(getApplicationContext(), MainActivity2.class);
-        startActivity(obj);
+        task.execute(url); //
 
     }
 
     public class DownloadTask extends AsyncTask<String, Void, String> {
 
+        // establishing a connection with the backend through the url
+        // reading content of the url
         protected String doInBackground(String... urls){
             String result = "";
             URL url;
@@ -79,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String s){
             super.onPostExecute(s);
 
+            // get the JSON object and convert it to a string
+            // setting text views as updated rate of buy and sell
             try{
                 JSONObject json = new JSONObject(s);
                 String buy_rate = json.getString("buy_rate");
@@ -93,6 +91,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // will take the user to the MainActivity2.java which is the calculator page
+    public void goToCalculator (View view){
+        Intent obj = new Intent(getApplicationContext(), MainActivity2.class);
+        startActivity(obj);
+
+    }
+
+    // refreshing the page to get the updated rate
     public void refresh(View view){
         String url = "http://192.168.0.101/Currency_Converter/get.php";
 
