@@ -17,11 +17,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.794"
         app:srcCompat="@drawable/background2" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="188dp"
         android:layout_height="62dp"
         android:backgroundTint="@color/white"
+        android:onClick="convertToLbp"
         android:text="Convert To LBP"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#C9000000"
@@ -89,11 +91,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.351" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="188dp"
         android:layout_height="62dp"
         android:backgroundTint="@color/white"
+        android:onClick="convertToUsd"
         android:text="Convert To USD"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#C9000000"
@@ -122,10 +126,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.891" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="51dp"
         android:layout_height="42dp"
+        android:onClick="reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.763"
@@ -138,6 +144,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:alpha="1"
+        android:onClick="fadeAmountToConvert"
         android:text="The amount LBP or USD"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
