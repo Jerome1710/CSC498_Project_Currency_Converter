@@ -86,7 +86,7 @@ public class MainActivity2 extends AppCompatActivity {
         DownloadTask task = new DownloadTask();
         task.execute(usd, lbp);
     }
-    
+
     public void convertToUsd (View view){
 
         String lbp = amount.getText().toString();
@@ -95,5 +95,11 @@ public class MainActivity2 extends AppCompatActivity {
         DownloadTask task = new DownloadTask();
         task.execute(usd, lbp);
     }
+
+    public void reset (View view){
+        amount_to_convert.setText("The amount LBP or USD");
+        amount.setText("");
+    }
+
 
 }
